@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 3px;
+    color: white;
+}
+
+header {
+    background-color: blue;
+    grid-column: 1/3;
+}
+
+main {
+    background-color: red;
+    grid-column:2/3 ;
+}
+
+aside {
+    background-color: green;
+    grid-row: 2/3;
+}
+
+footer {
+    background-color: purple;
+    grid-column: 1/3;
+}
